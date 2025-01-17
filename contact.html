@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="topButton" title="Go to top">Back to Top</button>
+    <header>
+        <h1 align="center">University of Windsor Computer Science Hub</h1>
+        <nav align="center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="resources.php">Student Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>University of Windsor</h2>
+            <p><a href="https://www.uwindsor.ca/">University of Windsor Website</a></p>
+            <p>Phone: (519) 253-3000</p>
+        
+        <h2>School of Computer Science</h2>
+            <p><a href="https://www.uwindsor.ca/science/computerscience/">School of Computer Science Website</a></p>
+            <p>Email: <a href="mailto:csinfo@uwindsor.ca" class="notbold">csinfo@uwindsor.ca</a></p>
+            <p>Phone: (519) 253-3000 ext. 2991</p>
+        
+        <h2>Computer Science Society</h2>
+        <p><a href="https://css.uwindsor.ca/">Computer Science Society Website</a></p>
+            <p>Email: <a href="mailto:css@uwindsor.ca" class="notbold">css@uwindsor.ca</a></p>
+    </section>
+
+    <section>
+        <h2>Send a message</h2>
+        <form action="send_email.php" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+    <br>
+    <footer>
+        <p>&copy; 2024<br>Anika Khan<br>ID: 110103345</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
